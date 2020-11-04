@@ -9,6 +9,7 @@ This release contains all features provided in the private version of Kichi such
 
 ## What does the source not contain?
 This release does not contain links related to our key system verification on the private version of Kichi and our logo without a watermark on it.
+
  *Key system verification links is referring to the ending URL of the verification page for our ad supported key systems. We do not provide this as we have other products using the same system such as Akuyo and Kiwi X. This is done to prevent any bypasser/robot to get pass our key systems in order to support maintenance cost. Such as developers, Hosting fees etc.* 
 
 ## Licensing information
