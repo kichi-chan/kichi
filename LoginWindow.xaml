@@ -1,0 +1,78 @@
+﻿<Window x:Class="SynpasteX.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SynpasteX"
+        mc:Ignorable="d"
+        Title="Synapse X - Login" ResizeMode="NoResize" Topmost="True" WindowStyle="None" Height="205" Width="549" Background="#584744" Closing="Window_Closing" Loaded="Window_Loaded" MouseDown="Window_MouseDown">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" Padding="{TemplateBinding Padding}" SnapsToDevicePixels="True">
+                            <ContentPresenter ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" TargetName="Bd" Value="#e0ccba"/>
+                                <Setter Property="Background" TargetName="Bd" Value="#e0ccba"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush" TargetName="Bd" Value="#e0ccba"/>
+                                <Setter Property="Background" TargetName="Bd" Value="#e0ccba"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="BorderBrush" TargetName="Bd" Value="#e0ccba"/>
+                                <Setter Property="Background" TargetName="Bd" Value="#e0ccba"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid HorizontalAlignment="Left" Height="30" Margin="0,0,0,0" VerticalAlignment="Top" Width="549" Background="#ae9e9a" MouseLeftButtonDown="TopBox_MouseLeftButtonDown">
+            <Label Name="TitleBox" Content="Exploit Name - Login" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Foreground="Black"/>
+            <Button Name="CloseButton" Content="X"  HorizontalAlignment="Right" VerticalAlignment="Top" Width="22" Foreground="Black" Click="CloseButton_Click"/>
+            <Button Name="MiniButton" Content="_"  HorizontalAlignment="Right" VerticalAlignment="Top" Width="22" Foreground="Black" Margin="0,0,22,0" Click="MiniButton_Click"/>
+            <Image x:Name="IconBox" Source="{StaticResource Lpng}" HorizontalAlignment="Left" Margin="6,4,0,0" VerticalAlignment="Top" Height="23" Width="27"/>
+        </Grid>
+
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="15,7.6,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.656,0.403" FontSize="14"/>
+        <TextBox Name="UsernameBox" HorizontalAlignment="Left" BorderThickness="0" Height="26" Margin="95,9.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalContentAlignment="Center" VerticalAlignment="Top" Width="444" Background="#695956" Foreground="White" FontSize="14"/>
+
+        <Label Content="Login Key:" HorizontalAlignment="Left" Margin="15,39,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.656,0.403" FontSize="14" Width="74"/>
+        <PasswordBox Name="PasswordBox" HorizontalAlignment="Left" BorderThickness="0" Height="26" Margin="95,40.6,0,0" Grid.Row="1" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="444" Background="#695956" Foreground="White" FontSize="14"/>
+        <Label HorizontalAlignment="Center" Margin="197,67.6,196.8,0" Grid.Row="1" Foreground="LightGray" VerticalAlignment="Top" FontSize="16" Width="155"/>
+
+        <Label HorizontalAlignment="Center" Margin="188,87,184,0" Foreground="LightGray" VerticalAlignment="Top" FontSize="16" Width="177" Grid.Row="1">
+            <TextBlock TextDecorations="Underline" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" HorizontalAlignment="Center" VerticalAlignment="Center">Want to get a new key?</TextBlock>
+        </Label>
+
+        <Button Name="LoginButton" Content="Login" HorizontalAlignment="Left" Margin="15,134.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="524" Height="31" Background="#ae9e9a" Foreground="Black" FontSize="14" Click="LoginButton_Click" BorderThickness="0" BorderBrush="Black"/>
+    </Grid>
+</Window>
