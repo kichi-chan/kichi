@@ -11,4 +11,6 @@ This release contains all features provided in the private version of Kichi such
 This release does not contain links related to our key system verification on the private version of Kichi and our logo without a watermark on it.
 
 ## Licensing information
-In accordance with the official source from Synapse X This source code is licensed under the AGPLv3. This means that if you release a project using some of this codebase, your release will have to contain its source code. If you do not include the source code, legal action can be taken. We welcome developers to study, share and improve this source code, but the license does not support its unauthorized usage in commercial projects and the likes.
+This source code is licensed under the AGPLv3. This means that if you release a project using some of this codebase, your release will have to contain its source code. If you do not include the source code, legal action can be taken. We welcome developers to study, share and improve this source code, but the license does not support its unauthorized usage in commercial projects and the likes.
+
+Note: We have a public version of Kichi if you're using the private version we will make announcements in our discord server regarding Script Hub updates or other features. If there are any actual tweaks or anything that's added new in the private version of Kichi it will also be added onto the github aswell as the source code.
