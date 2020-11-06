@@ -1,6 +1,3 @@
-# Kichi
-An open-source project revamped by Kiwi Development.
-
 ## About
 Kichi uses the official source code from Synapse X owned by Synapse Softworks LLC. The application design is revamped by Kiwi Development.
 
