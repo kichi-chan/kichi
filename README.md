@@ -18,4 +18,4 @@ This source code is licensed under the AGPLv3. This means that if you release a 
 Note: This is the public version of Kichi if you're using the private version we will make announcements in our discord server regarding Script Hub updates or other features. If there are any actual tweaks or anything new that's added in the private version of Kichi it will also be added onto the GitHub page aswell as the source code getting updated too. Join our discord server at discord.gg/JTUDdbd for update announcements.
 
 ## Credits
-This remake would not be possible without using the source code from https://github.com/synllc/SynapseX, Do you want to purchase Synapse X? Go to https://synapse.to/ By Synx LLC.
+This remake would not be possible without using the source code from https://github.com/synllc/SynapseX, Credits go to founder of Synapse X LoukaMB.
